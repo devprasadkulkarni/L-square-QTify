@@ -11,8 +11,8 @@ const Hero = () => {
   return (
     <Box className={styles.heroCenter}>
       <div className={styles.font}>
-        <h1>100 thousand songs, ad free</h1>
-        <h1>over thousands podcast episodes</h1>
+        <h3>100 thousand songs, ad free</h3>
+        <h3>over thousands podcast episodes</h3>
       </div>
       <img src={heroImage} alt="heroImage"></img>
     </Box>

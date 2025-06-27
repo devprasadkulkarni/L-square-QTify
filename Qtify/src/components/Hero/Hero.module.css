@@ -3,10 +3,11 @@
 .font {
   font-family: "poppins";
   color: #ffffff;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .heroCenter {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
