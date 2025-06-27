@@ -1,10 +1,10 @@
 import React from "react";
-import LogoIcon from "../../../assets/Logo.svg";
+import logoIcon from "../../../assets/logo.svg";
 
 const Logo = () => {
   return (
     <span>
-      <img src={LogoIcon} alt="logo" />
+      <img src={logoIcon} alt="logo" />
     </span>
   );
 };

@@ -19,7 +19,9 @@ const theme = createTheme({
 });
 
 createRoot(document.getElementById("root")).render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>
+  <StrictMode>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </StrictMode>
 );

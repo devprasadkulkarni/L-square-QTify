@@ -9,7 +9,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { useTheme } from "@mui/material/styles";
 
-import SearchBar from "./Search/SearchBar";
+import SearchBar from "./Search/SearchBar"
 import Logo from "./Logo/Logo";
 
 export default function PrimarySearchAppBar() {
@@ -101,7 +101,7 @@ export default function PrimarySearchAppBar() {
             <SearchBar />
           </Box>
 
-          {/* Right side: Buttons & menu icon */}
+          {/* Right side: Button */}
           <Box sx={{ display: "flex", alignItems: "center" }}>
             <Stack spacing={2} direction="row">
               <Button
