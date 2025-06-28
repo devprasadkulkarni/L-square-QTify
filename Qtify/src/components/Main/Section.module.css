@@ -1,0 +1,13 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topAlbums {
+  color: #ffffff;
+}
+
+.expandCollapse {
+  cursor: pointer;
+  color: #34c94b;
+}

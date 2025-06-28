@@ -8,25 +8,29 @@ import { useTheme } from "@mui/material/styles";
 
 import styles from "./SingleCard.module.css";
 
-export default function MultiActionAreaCard({ album }) {
+export default function SingleCard({ album, showLikes = false }) {
   const theme = useTheme();
 
-  if (!album) return null; // safety check
+  if (!album) return null;
+
+  const chipLabel = showLikes
+    ? `${album.likes || 0} Likes`
+    : `${album.follows || 0} Follows`;
 
   return (
     <>
-      <Card sx={{ minWidth: 250}}>
+      <Card sx={{ minWidth: 250 }}>
         <CardActionArea>
           <CardMedia
             component="img"
             height="300"
-            src={album.image}
+            image={album.image}
             alt={album.title}
           />
         </CardActionArea>
         <CardActions>
           <Chip
-            label={`${album.follows} Follows`}
+            label={chipLabel}
             sx={{
               backgroundColor: theme.palette.secondary.main,
               color: theme.palette.tertiary.main,
